@@ -11,6 +11,17 @@
 // Write your solution below.
 // ====================================================================
 
+//or parsefloat
+var firstNumber = prompt('Please input a number');
+firstNumber = parseInt(firstNumber);
+
+
+var secondNumber = prompt('Please input another number');
+secondNumber = parseInt(secondNumber);
+
+var difference = (firstNumber - secondNumber);
+	difference = Math.abs(difference);
+console.log(difference);
 
 
 
@@ -61,7 +72,13 @@
 // Write your solution below.
 // =======================================================================
 
+var x = Math.floor((Math.random() * 10) + 1);
+var y = parseInt(prompt('please input an input an integer'))
 
+if (x === y ) {
+	console.log('Match');
+}
+else console.log('Try Again');
 
 
 
@@ -89,7 +106,7 @@
 // Write your solution below.
 // =====================================================================
 
-
+  console.log(Math.random().toString(36).replace('0.', '') );
 
 
 
@@ -115,9 +132,20 @@
 // Write your solution below.
 // ====================================================================
 
+
+function shuffle(a) {
+    var j, x, i;
+    for (i = a.length - 1; i > 0; i--) {
+        j = Math.floor(Math.random() * (i + 1));
+        x = a[i];
+        a[i] = a[j];
+        a[j] = x;
+    }
+    return a;
+}
+
 var testArray = [1, 2, 4, 8, 16, 32, 64, 128];
-
-
+shuffle(testArray);
 
 
 
